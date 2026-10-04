@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Muth Nabi Mega Quiz 2026 | Registration Form</title>
+  <meta name="description" content="Official registration form for the 10th Edition Muth Nabi (ﷺ) Mega Quiz 2026. Organized by SDC NIT Calicut (SSF Unit).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23F8C857'/><text x='50%' y='58%' font-size='42' text-anchor='middle' fill='%238A1C1C' font-family='sans-serif' font-weight='bold'>MQ</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="muthnabiquiz.css">
+</head>
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="bg-decor bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor bg-decor-2" aria-hidden="true"></div>
+
+  <main class="quiz-wrapper">
+
+    <!-- Header Banner Image -->
+    <header class="header-banner-container">
+      <img 
+        src="muthnabi-header.png" 
+        alt="10th Edition Muth Nabi (ﷺ) Mega Quiz 2026" 
+        class="header-banner-img"
+        width="1144"
+        height="602"
+        loading="eager"
+      >
+    </header>
+
+    <!-- Event Info Badges (Date, Time & Mode) -->
+    <div class="event-info-strip" aria-label="Event Details">
+      
+      <!-- Date & Time -->
+      <div class="info-badge badge-datetime">
+        <span class="info-badge-icon">📅</span>
+        <span>06/10/2026 Tuesday, 8.00pm</span>
+      </div>
+
+      <!-- Mode -->
+      <div class="info-badge badge-mode">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="info-badge-icon">🌐</span>
+        <span>Online | Mentimeter</span>
+      </div>
+
+    </div>
+
+    <!-- Registration Form Card -->
+    <section class="form-card">
+      
+      <div class="form-title-wrap">
+        <span class="form-tagline">10th Edition • SDC NITC</span>
+        <h1 class="form-title">Registration Form</h1>
+        <div class="form-title-underline" aria-hidden="true"></div>
+      </div>
+
+      <form id="quiz-registration-form" class="quiz-form" novalidate>
+        
+        <!-- 1. Full Name -->
+        <div class="form-group">
+          <label class="form-label" for="full-name">
+            <span>Full Name</span>
+            <span class="label-required">*</span>
+          </label>
+          <div class="input-container">
+            <span class="input-icon-left" aria-hidden="true">👤</span>
+            <input 
+              type="text" 
+              id="full-name" 
+              name="fullName"
+              class="input-field" 
+              placeholder="e.g. Mohammed Sabah" 
+              autocomplete="name"
+              required
+            >
+          </div>
+          <span class="error-msg" id="name-error">Please enter your full name</span>
+        </div>
+
+        <!-- 2. Phone Number -->
+        <div class="form-group">
+          <label class="form-label" for="phone-number">
+            <span>Phone Number (WhatsApp)</span>
+            <span class="label-required">*</span>
+          </label>
+          <div class="phone-prefix-wrap">
+            <span class="phone-prefix">
+              <span>🇮🇳</span>
+              <span>+91</span>
+            </span>
+            <input 
+              type="tel" 
+              id="phone-number" 
+              name="phoneNumber"
+              class="input-field phone-input" 
+              placeholder="10-digit mobile number" 
+              maxlength="10"
+              inputmode="numeric"
+              pattern="[0-9]{10}"
+              autocomplete="tel"
+              required
+            >
+          </div>
+          <span class="error-msg" id="phone-error">Please enter a valid 10-digit number</span>
+        </div>
+
+        <!-- 3. Academic Year -->
+        <div class="form-group">
+          <label class="form-label" for="academic-year">
+            <span>Year of Study</span>
+            <span class="label-required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="academic-year" name="year" class="select-field" required>
+              <option value="" disabled selected>Select Year (1, 2, 3, 4, 5)</option>
+              <option value="1">1st Year</option>
+              <option value="2">2nd Year</option>
+              <option value="3">3rd Year</option>
+              <option value="4">4th Year</option>
+              <option value="5">5th Year</option>
+            </select>
+          </div>
+          <span class="error-msg" id="year-error">Please select your year</span>
+        </div>
+
+        <!-- 4. Department -->
+        <div class="form-group">
+          <label class="form-label" for="department">
+            <span>Department (NITC)</span>
+            <span class="label-required">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="department" name="department" class="select-field" required>
+              <option value="" disabled selected>Select Department</option>
+              <option value="Architecture & Planning">Architecture &amp; Planning</option>
+              <option value="Chemical Engineering">Chemical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Computer Science & Engineering">Computer Science &amp; Engineering</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Electronics & Communication Engineering">Electronics &amp; Communication Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Materials Science & Engineering">Materials Science &amp; Engineering</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Management Studies">Management Studies (SOMSA)</option>
+              <option value="Other">Other / Interdisciplinary</option>
+            </select>
+          </div>
+          <span class="error-msg" id="dept-error">Please select your department</span>
+        </div>
+
+        <!-- 5. Gender (Two radio buttons: Male or Female) -->
+        <div class="form-group">
+          <label class="form-label">
+            <span>Gender</span>
+            <span class="label-required">*</span>
+          </label>
+          <div class="gender-radio-grid" role="radiogroup" aria-label="Gender Selection">
+            
+            <!-- Male Radio Card -->
+            <div>
+              <input 
+                type="radio" 
+                id="gender-male" 
+                name="gender" 
+                value="Male" 
+                class="gender-radio-input" 
+                required
+              >
+              <label for="gender-male" class="gender-card-label">
+                <span class="gender-indicator" aria-hidden="true"></span>
+                <span>Male</span>
+              </label>
+            </div>
+
+            <!-- Female Radio Card -->
+            <div>
+              <input 
+                type="radio" 
+                id="gender-female" 
+                name="gender" 
+                value="Female" 
+                class="gender-radio-input"
+              >
+              <label for="gender-female" class="gender-card-label">
+                <span class="gender-indicator" aria-hidden="true"></span>
+                <span>Female</span>
+              </label>
+            </div>
+
+          </div>
+          <span class="error-msg" id="gender-error">Please select your gender</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn" class="btn-submit">
+          <span class="btn-spinner" aria-hidden="true"></span>
+          <span class="btn-text">Submit Registration</span>
+          <span aria-hidden="true">→</span>
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- Footer Note -->
+    <footer class="quiz-footer">
+      <p>Organized by <strong>Students' Development Cell (SDC)</strong> • SSF NIT Calicut Unit</p>
+    </footer>
+
+  </main>
+
+  <!-- ========================================================================
+       POST-SUBMISSION POPUP MODAL DIALOG
+       ======================================================================== -->
+  <div class="quiz-modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    
+    <div class="modal-card">
+      
+      <!-- Trophy / Celebration Icon -->
+      <div class="success-trophy-wrap" aria-hidden="true">
+        <span>🏆</span>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="modal-heading" id="modal-title">Thanks for registering!</h2>
+      
+      <!-- Subheading -->
+      <p class="modal-subheading">Wishing you a better success.</p>
+
+      <!-- Community Join Button -->
+      <a 
+        href="https://chat.whatsapp.com/KRxIqSPX4nT9qR9WLXmmH3" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn-community" 
+        id="community-link"
+      >
+        <svg style="width: 22px; height: 22px; fill: currentColor;" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.33C9.33 7.33 9 7.4 8.73 7.73C8.46 8.05 7.71 8.76 7.71 10.19C7.71 11.63 8.76 13.01 8.9 13.2C9.05 13.4 10.93 16.44 13.88 17.61C16.33 18.58 16.83 18.39 17.37 18.34C17.91 18.29 19.11 17.62 19.36 16.93C19.61 16.23 19.61 15.64 19.53 15.51C19.46 15.38 19.26 15.31 18.96 15.16C18.66 15.01 17.19 14.29 16.92 14.19C16.65 14.09 16.45 14.04 16.25 14.34C16.05 14.64 15.48 15.31 15.31 15.51C15.14 15.71 14.96 15.73 14.66 15.58C14.36 15.43 13.41 15.12 12.27 14.11C11.39 13.32 10.8 12.35 10.63 12.05C10.45 11.75 10.61 11.59 10.76 11.44C10.9 11.31 11.06 11.09 11.21 10.92C11.36 10.74 11.41 10.62 11.51 10.42C11.61 10.22 11.56 10.05 11.49 9.9C11.41 9.75 10.82 8.3 10.57 7.71C10.33 7.13 10.08 7.21 9.9 7.21C9.73 7.2 9.53 7.2 9.33 7.2L9.53 7.33Z"/>
+        </svg>
+        <span>Join the community for more updates</span>
+      </a>
+
+      <!-- Instructions Section -->
+      <div class="instructions-card">
+        <div class="instructions-header">
+          <span>📌</span>
+          <span>Quiz Instructions</span>
+        </div>
+        <ol class="instruction-list">
+          
+          <li class="instruction-item">
+            <span class="instruction-num">1</span>
+            <span>Quiz will be conducted in <strong>Mentimeter</strong>.</span>
+          </li>
+
+          <!-- Instruction 2 (Placeholder ready for user to manually enter) -->
+          <li class="instruction-item">
+            <span class="instruction-num">2</span>
+            <span>The Mentimeter Quiz Room Code and the google meet joining link will be shared in the WhatsApp community 30 minutes before 8:00 PM.</span>
+          </li>
+
+          <!-- Instruction 3 (Placeholder ready for user to manually enter) -->
+          <li class="instruction-item">
+            <span class="instruction-num">3</span>
+            <span>Ensure a stable internet connection. Speed and accuracy both determine your live leaderboard ranking!</span>
+          </li>
+
+        </ol>
+      </div>
+
+      <!-- Close Action Button -->
+      <button type="button" class="modal-close-action" id="modal-close-btn">
+        Close Window
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Client-Side JavaScript Controller -->
+  <script src="muthnabiquiz.js"></script>
+</body>
+</html>

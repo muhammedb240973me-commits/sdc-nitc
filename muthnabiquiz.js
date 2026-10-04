@@ -224,5 +224,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navigator.vibrate) {
       navigator.vibrate([100, 50, 100]);
     }
+    // Auto-redirect logic
+    let timeLeft = 10;
+    const countdownEl = document.getElementById('countdown');
+    const progressBar = document.getElementById('progress-bar');
+    
+    // Trigger the linear loading bar animation
+    if (progressBar) {
+      progressBar.style.animation = "loadBar 10s linear forwards";
+    }
+
+    // Start countdown timer
+    const timer = setInterval(() => {
+      timeLeft--;
+      if (countdownEl) {
+        countdownEl.textContent = timeLeft;
+      }
+      
+      // Execute redirect when timer hits 0
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        window.location.href = WHATSAPP_COMMUNITY_URL;
+      }
+    }, 1000);
   }
 });

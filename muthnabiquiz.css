@@ -715,3 +715,39 @@ body {
   background-color: #F1ECE4;
   color: var(--color-dark);
 }
+
+/* ==========================================================================
+   AUTO-REDIRECT LOADER STYLES
+   ========================================================================== */
+.redirect-loader-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.redirect-text {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--color-maroon);
+  margin-bottom: 0.65rem;
+}
+
+.progress-bar-wrap {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-gold-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-gold-primary) 0%, var(--color-whatsapp) 100%);
+  border-radius: var(--radius-full);
+}
+
+@keyframes loadBar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}

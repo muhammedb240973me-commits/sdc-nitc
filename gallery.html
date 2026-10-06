@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | SDC NITC</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230B192C'/><path d='M25 65 Q50 55 50 40 Q50 55 75 65 Q50 60 25 65 Z' fill='%2310B981'/><polygon points='50,15 54,27 67,27 56,35 60,47 50,39 40,47 44,35 33,27 46,27' fill='%23F59E0B'/></svg>">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Clean Vanilla CSS / Design System Tokens -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        
+        <!-- Brand Identity -->
+        <a href="#hero" class="brand" aria-label="SDC NITC Homepage">
+          <!-- Custom Vector Emblem (Open Book + Growth Spire + Guiding Star) -->
+          <svg class="brand-emblem" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#0B192C"/>
+            <!-- Open Book Foundation -->
+            <path d="M14 45C22 41 29 42 32 46C35 42 42 41 50 45V27C42 23 35 24 32 28C29 24 22 23 14 27V45Z" fill="#FAF8FF" fill-opacity="0.95"/>
+            <!-- Central Spine Accent -->
+            <path d="M31.2 26V47H32.8V26H31.2Z" fill="#CBD5E1"/>
+            <!-- Growth Spire Ascending -->
+            <path d="M32 15L36 34H28L32 15Z" fill="#10B981"/>
+            <!-- Inner Beacon Highlight -->
+            <path d="M32 18L34.5 32H29.5L32 18Z" fill="#34D399"/>
+            <!-- Guiding Moral Star -->
+            <path d="M32 7L33.6 11.2L38 11.8L34.8 14.8L35.6 19.2L32 17.2L28.4 19.2L29.2 14.8L26 11.8L30.4 11.2L32 7Z" fill="#F59E0B"/>
+          </svg>
+          <div class="brand-text">
+            <div class="brand-title">
+              <span>SDC NITC</span>
+              <span class="brand-badge"></span>
+            </div>
+            <span class="brand-sub">Students' Development Cell • NIT Calicut</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#activities" class="nav-link">Activities</a>
+          <a href="#question-bank" class="nav-link">Question Bank</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="donate.html" class="nav-link">Donate</a>
+        </nav>
+
+        <!-- Nav Action Buttons -->
+        <div class="nav-actions">
+          <a href="https://chat.whatsapp.com/CZux2bHuhFWHWM7LTz9LcR" class="btn-primary">
+            <i data-lucide="ticket"></i>
+            <span>Join Us</span>
+          </a>
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <div class="brand-title" style="font-size: 1.1rem;">
+          <span>SDC NITC</span>
+          <span class="brand-badge"></span>
+        </div>
+        <button class="modal-close-btn" id="mobile-drawer-close" aria-label="Close menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link active"><i data-lucide="home"></i> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i data-lucide="info"></i> About Us</a></li>
+        <li><a href="#activities" class="mobile-nav-link"><i data-lucide="compass"></i> Activities</a></li>
+        <li><a href="#question-bank" class="mobile-nav-link"><i data-lucide="book-open"></i> Question Bank</a></li>
+        <li><a href="#gallery" class="mobile-nav-link"><i data-lucide="image"></i> Gallery</a></li>
+        <li><a href="donate.html" class="mobile-nav-link"><i data-lucide="heart-handshake"></i> Donate Us</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="https://chat.whatsapp.com/CZux2bHuhFWHWM7LTz9LcR" class="btn-primary" style="width: 100%; text-align: center;">Join the Community</a>
+      <p style="font-size: 0.75rem; color: var(--text-light); text-align: center;">Students' Development Cell • Alqamar, Companymukk</p>
+    </div>
+  </aside>
+  <main>
+    <div class="container">
+
+
+
+    </div>
+</body>
+</html>

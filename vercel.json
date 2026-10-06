@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/muthnabiquiz", "destination": "/muthnabiquiz.html" }
+    { "source": "/muthnabiquiz", "destination": "/muthnabiquiz.html" },
     {
       "source": "/join",
       "destination": "https://meet.google.com/drm-bpjt-jvf",

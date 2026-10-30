@@ -1,12 +1,9 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/muthnabiquiz", "destination": "/muthnabiquiz.html" },
+  "redirects": [
     {
-      "source": "/join",
-      "destination": "https://meet.google.com/drm-bpjt-jvf",
-      "permanent": false
+      "source": "/(.*)",
+      "destination": "https://sdcnitc.vercel.app/$1",
+      "permanent": true
     }
   ]
 }
-

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse question papers and study resources from SDC NITC.">
+  <title>Question Bank | SDC NITC</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="question-bank.css">
+
+  
+</head>
+
+<body>
+  <main class="qb-container">
+    
+    <header class="qb-header">
+        <h1>SDC Question Bank</h1>
+        <p>
+            Your academic resource hub for question papers,
+            study materials and exam preparation at NIT Calicut.
+        </p>
+    </header>
+
+
+    <section aria-labelledby="qb-status-title">
+      <h2 id="qb-status-title">Connection status</h2>
+      <div id="qb-status" class="qb-status" role="status" aria-live="polite">
+        Page loaded. Supabase connection will be added in the next step.
+      </div>
+    </section>
+    
+    <section id="qb-courses-section" style="margin-top: 32px;">
+        <h2>Browse Courses</h2>
+        <p>Select a course to explore its study materials.</p>
+
+        <div class="qb-filters">
+        <div class="qb-filter-group">
+            <label for="qb-search">Search courses</label>
+            <input
+                id="qb-search"
+                type="search"
+                placeholder="Search by course name or code..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="qb-filter-group">
+            <label for="qb-department">Department</label>
+            <select id="qb-department">
+                <option value="">All Departments</option>
+            </select>
+        </div>
+
+        <div class="qb-filter-group">
+            <label for="qb-semester">Semester</label>
+            <select id="qb-semester">
+                <option value="">All Semesters</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select>
+        </div>
+        </div>
+
+        <div id="qb-courses">
+          Loading courses...
+        </div>
+
+        
+        <div style="margin: 20px 0;">
+            <label for="qb-search">Search courses</label>
+            <input
+                id="qb-search"
+                type="search"
+                placeholder="Search by course name or code..."
+                autocomplete="off"
+            >
+        </div>
+
+
+        <div id="qb-courses">
+            Loading courses...
+        </div>
+    </section>
+
+  </main>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="question-bank.js"></script>
+
+    
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+
+/* =================================
+   SDC QUESTION BANK
+   Modern Academic - Light Theme
+================================= */
+
+:root {
+  --qb-primary: #173b70;
+  --qb-primary-hover: #102d56;
+  --qb-accent: #3976c5;
+  --qb-background: #f4f7fb;
+  --qb-surface: #ffffff;
+  --qb-text: #1c293b;
+  --qb-muted: #64748b;
+  --qb-border: #e1e8f0;
+  --qb-radius: 14px;
+  --qb-shadow: 0 5px 20px rgba(23, 59, 112, 0.06);
+}
+
+body {
+  background: var(--qb-background);
+  color: var(--qb-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.qb-container {
+  width: min(100% - 36px, 1100px);
+  margin: 0 auto;
+  padding: 36px 0 64px;
+}
+
+.qb-header {
+  background: linear-gradient(135deg, #173b70, #285b9c);
+  color: #ffffff;
+  padding: 36px;
+  margin-bottom: 32px;
+  border-radius: 18px;
+  box-shadow: var(--qb-shadow);
+}
+
+.qb-header h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+}
+
+.qb-header p {
+  color: #e3edfb;
+  font-size: 16px;
+  margin: 0;
+  max-width: 650px;
+}
+
+#qb-status-title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.qb-status {
+  padding: 14px 18px;
+  border: 1px solid var(--qb-border);
+  border-radius: 10px;
+  background: var(--qb-surface);
+  color: var(--qb-text);
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.qb-status.error {
+  background: #fff1f1;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+#qb-courses-section {
+  margin-top: 36px !important;
+  padding: 28px;
+  background: var(--qb-surface);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: var(--qb-shadow);
+}
+
+#qb-courses-section h2 {
+  color: var(--qb-primary);
+  font-size: 25px;
+  margin: 0 0 8px;
+}
+
+#qb-courses-section > p {
+  color: var(--qb-muted);
+  margin: 0 0 20px;
+}
+
+#qb-department,
+#qb-semester,
+#qb-search {
+  width: 100%;
+  min-width: 190px;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid #d5deea;
+  border-radius: 9px;
+  background: #ffffff;
+  color: var(--qb-text);
+  font: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#qb-department:focus,
+#qb-semester:focus,
+#qb-search:focus {
+  border-color: var(--qb-accent);
+  box-shadow: 0 0 0 3px rgba(57, 118, 197, 0.12);
+}
+
+#qb-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+#qb-courses article {
+  padding: 22px !important;
+  margin: 0 !important;
+  border: 1px solid var(--qb-border) !important;
+  border-radius: 12px !important;
+  background: var(--qb-surface);
+  box-shadow: 0 2px 8px rgba(23, 59, 112, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow-wrap: anywhere;
+}
+
+#qb-courses article:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--qb-shadow);
+  border-color: #b8cce8 !important;
+}
+
+#qb-courses article h3 {
+  color: var(--qb-primary);
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+#qb-courses article p {
+  color: var(--qb-muted);
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.8;
+}
+
+
+/* Course search and filters */
+
+.qb-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.qb-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.qb-filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--qb-text);
+}
+
+#qb-search,
+#qb-department,
+#qb-semester {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+@media (max-width: 650px) {
+  .qb-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .qb-container {
+    width: min(100% - 24px, 1100px);
+    padding-top: 18px;
+  }
+
+  .qb-header {
+    padding: 26px 20px;
+    border-radius: 14px;
+  }
+
+  #qb-courses-section {
+    padding: 20px 16px;
+  }
+
+  #qb-courses {
+    grid-template-columns: 1fr;
+  }
+
+  #qb-department,
+  #qb-semester,
+  #qb-search {
+    min-width: 0;
+  }
+}
+
+
+/* Resource area inside course cards */
+
+.qb-course-resources {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--qb-border);
+  color: var(--qb-muted);
+  font-size: 13px;
+}
